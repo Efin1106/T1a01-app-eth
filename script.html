@@ -1,0 +1,16 @@
+hi <b>there</b> world <br><br>
+<input type=text value="in text"> <br><br>
+<input type=button value="Run TARDIS" onclick="{
+ myOut = document.getElementById('myArea') 
+ for (mycount = 1; mycount<= 5; mycount++){
+    myOut.innerHTML += 'tardis '
+    if (mycount == 3){
+       myOut.innerHTML += 'Doctor '
+    }
+ }
+}"><br><br>
+
+<div id="myArea" > Your output will go here </div> <br>
+<input type=button value="Show myOut" onclick="{
+   alert('The variable myOut contains ' + myout.innerHTML)
+}">
