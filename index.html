@@ -1,16 +1,37 @@
-hi <b>there</b> world <br><br>
-<input type=text value="in text"> <br><br>
-<input type=button value="Run TARDIS" onclick="{
- myOut = document.getElementById('myArea') 
- for (mycount = 1; mycount<= 5; mycount++){
-    myOut.innerHTML += 'tardis '
-    if (mycount == 3){
-       myOut.innerHTML += 'Doctor '
-    }
- }
-}"><br><br>
 
-<div id="myArea" > Your output will go here </div> <br>
+
+
+hi <b>there</b> world find the 1 <br><br>
+
+<input id="myInput" type=text value=" TARDIS "> <br><br>
+
+
+<input type=button value="Run TARDIS" onclick="{
+
+ myOut = document.getElementById('myArea') 
+ myIn  = document.getElementById('myInput')
+//alert(myIn.value)
+
+ for (mycount = 5; mycount >= 1; mycount--){
+
+    myOut.innerHTML += mycount + ' ' + myIn.value
+
+    if (mycount == 3){
+
+       myOut.innerHTML += ' The Doctor'
+    }
+    myOut.innerHTML += '<br>'
+ }
+
+}"> <br><br>
+
+<div id="myArea" > Your output will go here <br></div> <br>
 <input type=button value="Show myOut" onclick="{
-   alert('The variable myOut contains ' + myout.innerHTML)
+   alert('The variable myOut contains ' + myOut.innerHTML)
 }">
+
+
+<html>
+<body bgcolor=" purple">
+
+
