@@ -1,24 +1,23 @@
 
 
+hi <b>there</b> world <br><br>
 
-hi <b>there</b> world find the 1 <br><br>
-
-<input id="myInput" type=text value=" TARDIS "> <br><br>
+<input id="myInput" type=text value=" LEROY JENKENS "> <br><br>
 
 
-<input type=button value="Run TARDIS" onclick="{
+<input type=button value="i used to RUN but I got an arrow at the knee " onclick="{
 
  myOut = document.getElementById('myArea') 
  myIn  = document.getElementById('myInput')
 //alert(myIn.value)
 
- for (mycount = 5; mycount >= 1; mycount--){
+ for (mycount = 10; mycount >= 1; mycount--){
 
     myOut.innerHTML += mycount + ' ' + myIn.value
 
-    if (mycount == 3){
+    if ((mycount == 3) || (mycount == 7)){
 
-       myOut.innerHTML += ' The Doctor'
+       myOut.innerHTML += ' HIT THE WEAK SPOT FOR MASSIVE DAMAGE'
     }
     myOut.innerHTML += '<br>'
  }
@@ -26,12 +25,10 @@ hi <b>there</b> world find the 1 <br><br>
 }"> <br><br>
 
 <div id="myArea" > Your output will go here <br></div> <br>
-<input type=button value="Show myOut" onclick="{
+<input type=button value="FOX DO A BARELL ROLL" onclick="{
    alert('The variable myOut contains ' + myOut.innerHTML)
 }">
 
 
 <html>
-<body bgcolor=" purple">
-
-
+<body bgcolor="blue ">
